@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
+
+.fuente{
+  font-family: 'Heebo', sans-serif;
+
+}
+
+.hero {
+	height: 700px;
+	background:  linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.8) 100%), url(../public/img/hero.jpg) center center / cover no-repeat;
+  margin-bottom: 12px;
+}
+
+a*{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover{
+  color: white;
+}
