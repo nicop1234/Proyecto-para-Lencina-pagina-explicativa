@@ -1,9 +1,13 @@
+/** @format */
+
 import Head from "next/head";
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Image from "next/image";
 import { Nav, Navbar, Container, Row } from "react-bootstrap";
 import { logos } from "../profile";
+import Footer from "../components/Footer";
+import Card from "react-bootstrap/Card";
 
 export default function Home() {
   return (
@@ -17,21 +21,40 @@ export default function Home() {
       <div>
         <h1 className=' text-center fuente mt-5 '> ¿Que desea consutar? </h1>
       </div>
-      <Navbar>
-        {logos.map(({ alt, url, href }, i) => (
-          <Nav.Link>
-            <Image
-              alt={alt}
-              src={url}
-              width={1200}
-              height={1200}
-              layout='intrinsic'
-              href={href}
-              key={i}
-            />
-          </Nav.Link>
-        ))}
-      </Navbar>
+      <Container>
+        <div className='contenedor-nav d-flex justify-content-center '>
+          <Navbar>
+            {logos.map(({ alt, url, href, text }, i) => (
+              <Card>
+                <div
+                  className='navs d-flex justify-content-center ms-2 sombra'
+                  style={{ width: "16rem" }}>
+                  <div>
+                    <Row>
+                      <h2 className='text-center fuente '>{text}</h2>
+                    </Row>
+                    <Row>
+                      <Nav.Link>
+                        <Image
+                          alt={alt}
+                          src={url}
+                          width={1200}
+                          height={1200}
+                          layout='intrinsic'
+                          href={href}
+                          key={i}
+                        />
+                      </Nav.Link>
+                    </Row>
+                  </div>
+                </div>
+              </Card>
+            ))}
+          </Navbar>
+        </div>
+      </Container>
+
+      <Footer />
     </>
   );
 }
