@@ -6,6 +6,20 @@
   font-family: "Heebo", sans-serif;
 }
 
+.anclas {
+  text-decoration: none !important;
+}
+
+.img{
+  width: 10px;
+  height: 200px;
+}
+
+.sinPuntito{
+  list-style:none;
+
+}
+
 .hero {
   height: 700px;
   background: linear-gradient(
@@ -27,6 +41,20 @@
   border-radius: 10%;
 }
 
+
+.boton{
+  background-color: black;
+  color: white;
+  border-radius: 3%;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  -o-border-radius: 3%;
+}
+.cliqueado{
+  background-color: rgb(13, 146, 73);
+  color: white;
+}
 
 
 .sombra:hover {

@@ -8,7 +8,7 @@ export const logos = [
     url: "/img/html.png",
     with: 512,
     height: 512,
-    href: "/html",
+    href: '/html',
     text: "Html",
   },
 
