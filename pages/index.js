@@ -22,7 +22,7 @@ export default function Home({ children }) {
 <div>
   <h1 className=' text-center fuente mt-5 '> ¿Que desea consutar? </h1>
 </div>
-<Container className='pb-4'>
+<Container className='pb-5'>
   <div className='contenedor-nav d-flex justify-content-center '>
     <Navbar>
       {logos.map(({ alt, url, href, text }, i) => (

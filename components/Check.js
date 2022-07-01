@@ -1,25 +1,16 @@
 /** @format */
 
 import React from "react";
+import { Button } from "react-bootstrap";
 
-
-
-
-const Check = ({ evento, claseDelBoton, id}) => {
-
+const Check = ({ evento, id, apretado }) => {
   return (
-    <div className='d-flex justify-content-end div-content'>
-      <button
-        id={id}
-        className={claseDelBoton}
-        type="button"
-        variant='dark'
-        onClick={evento}>
+    <div className='btn btn d-flex justify-content-end div-content'>
+      <Button id={id} variant='dark' onClick={evento} disabled={apretado}>
         Leido
-      </button>
- 
+      </Button>
     </div>
-  );
+  )
 };
 
 export default Check;

@@ -15,9 +15,15 @@
   height: 200px;
 }
 
-.sinPuntito{
+a{
   list-style:none;
+}
 
+.borders{
+  border: 1.5px solid rgb(0, 0, 0);
+  border-radius:3%;
+  box-shadow: 0px 5px 15px 0px rgba(51, 50, 51, 0.57);
+  padding: 1em;
 }
 
 .hero {
@@ -37,24 +43,6 @@
   padding: 2rem;
 }
 
-.border{
-  border-radius: 10%;
-}
-
-
-.boton{
-  background-color: black;
-  color: white;
-  border-radius: 3%;
-  -webkit-border-radius: 3%;
-  -moz-border-radius: 3%;
-  -ms-border-radius: 3%;
-  -o-border-radius: 3%;
-}
-.cliqueado{
-  background-color: rgb(13, 146, 73);
-  color: white;
-}
 
 
 .sombra:hover {

@@ -5,7 +5,7 @@ import {Navbar, Nav, Card, Container, NavDropdown } from "react-bootstrap";
 const Layout = ({children}) => {
   return (
     <>
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='pb-4'>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark" className='pb-4' sticky="top">
       <Container>
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
