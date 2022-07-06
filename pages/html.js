@@ -3,13 +3,14 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import Image from "next/image";
-import { Nav, Navbar, Container, Row } from "react-bootstrap";
+import { Container, Row} from "react-bootstrap";
 import Hero from "../components/Hero.js";
 import Check from "../components/Check.js";
 import StateLeidos from "../components/StateLeidos.js";
 import { useState } from "react";
-import Swal from "sweetalert";
 import Layout from "../components/Layout.js";
+import swal from 'sweetalert';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 
 
@@ -33,7 +34,7 @@ export default function Home({
   page,
   cont,
 }) {
-  const [contador, setContador] = useState(0);
+  const [contador, setContador] = useState(7);
 
   const [apretadobtn, setApretadobtn] = useState(false);
   const [apretadobtn1, setApretadobtn1] = useState(false);
@@ -92,14 +93,13 @@ export default function Home({
   }
 
   if (contador == 7) {
-
-    Swal({
-      title: 'Felicitciones completaste html',
-      icon: 'success'
+    swal({
+      title: "Felicitaciones!",
+      text: "Pasaste la guia de html",
+      icon: "success",
+      button: "seguir",
     })
-    contadoress()
-}
-
+  }
 
 
   return (
