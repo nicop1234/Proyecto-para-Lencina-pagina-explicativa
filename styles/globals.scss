@@ -55,13 +55,14 @@ a{
   -o-transition: 0.5s;
 }
 
-@media (max-width: 757px) {
+@media (max-width: 757px){
+
   .ancho{
-    margin-bottom: 1em;
-    width: 10%;
-    height: 31%;
-    
-
-
+    height: 30%;
+    padding: 2px;
+  }
+  .imagen{
+    width: 80%;
+    padding-left:45px ;
   }
 }

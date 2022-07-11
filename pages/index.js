@@ -20,23 +20,25 @@ export default function Home({ children }) {
       </Head>
       <Layout>
 
+
         <div>
           <h1 className=' text-center fuente mt-1 '> ¿Que desea consutar? </h1>
         </div>
     
           <Container className='d-flex justify-content-center cards mb-1'>
-            <Row className='pb-2'>
-              <div className='col-1'></div>
+            <Row className='pb-2 ms-5'>
             {logos.map(({ alt, url, href, text, id}, i) => (
-              <div className='sombra navs col-md-3  ancho mx-1' id={id}>
+             <>
+              <div className='sombra navs col-md-3 col-10 my-2 ancho' id={id}>
               <Row>
                 <div>
-                  <h2 className='text-center fuente '>{text}</h2>
+                  <h2 className='text-center fuente'>{text}</h2>
                 </div>
               </Row>
-                <Row>
-                  <Nav.Link>
-                    <Link href={href}>
+                <Row className='d-flex justify-content-center'>
+                  <Nav.Link className='d-flex'>
+                    <Link href={href} >
+                      <div className='imagen'>
                       <Image
                         alt={alt}
                         src={url}
@@ -45,14 +47,20 @@ export default function Home({ children }) {
                         layout='intrinsic'
                         key={i}
                       />
+                      </div>
                     </Link>
                   </Nav.Link>
                 </Row>
+                
                 </div>
+                <div className='col-1'></div>                
+                </>
+              
             ))}
-            <div className='col-1'></div>
+
             </Row>
           </Container>
+        
       </Layout>
     </div>
   );
